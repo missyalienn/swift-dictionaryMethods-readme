@@ -62,7 +62,9 @@ if let godfatherMovies = movies["The Godfather"] {
 
 
 
-// MODIFYING VALUES
+// MODIFYING VALUES 
+
+//Sometimes a value is mutable, which means that you can alter it in some way. For example, you may want to append an item to an Array value. Imagine we just got word from the studio that there are going to be two more Fast and Furious movies: Faster! 9 and THE FASTEST 10. Since the values of the movies dictionary are all arrays of strings, you have probably guessed that you can use the append() method of Array to add items to those values.
 
 if var films = movies["The Fast and the Furious"] {
     films.append("Faster! 9")
@@ -79,7 +81,7 @@ if let fastMovies = movies["The Fast and the Furious"] {
 
 
 
-// DELETING KEY/VALUE PAIRS
+// DELETING KEY/VALUE PAIRS FROM A DICTIONARY
 
 movies["The Fast and the Furious"] = nil
 
@@ -93,7 +95,7 @@ if let fast3rFilms = movies["The Fast and the Furious"] {
 
 
 
-// COUNTING ITEMS
+// COUNTING ITEMS IN A DICTIONARY
 
 let planetsAndTheirMoons = [
     "Mercury": 0,
@@ -132,7 +134,7 @@ if emptyDictionary.isEmpty {
 
 
 
-// RETRIEVING KEYS
+// RETRIEVING KEYS FROM A DICTIONARY
 
 let planetNames = Array(planetsAndTheirMoons.keys)
 
@@ -142,7 +144,7 @@ for planet in planetsAndTheirMoons.keys {
 
 
 
-// RETRIEVING VALUES
+// RETRIEVING VALUES FROM A DICTIONARY
 
 let allTheMoons = Array(planetsAndTheirMoons.values)
 
